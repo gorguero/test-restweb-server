@@ -1,3 +1,4 @@
+import { Server } from "./presentation/server";
 
 
 (async() =>{
@@ -5,5 +6,6 @@
 })();
 
 function main(){
-    console.log('Iniciando app')
+    const server = new Server();
+    server.start();
 }
